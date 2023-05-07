@@ -25,13 +25,24 @@ class Dadoos extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(10.0),
-              child: Image.asset("imagens/dado1.png"),
+              child: TextButton(
+                onPressed: () {},
+                child: Image.asset("imagens/dado1.png"),
+              ),
             ),
+          ),
+          Container(
+            width: 1,
+            height: 100,
+            color: Colors.white,
           ),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(10.0),
-              child: Image.asset("imagens/dado1.png"),
+              child: TextButton(
+                onPressed: () {},
+                child: Image.asset("imagens/dado1.png"),
+              ),
             ),
           ),
         ],

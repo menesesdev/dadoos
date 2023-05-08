@@ -17,10 +17,16 @@ void main() {
   );
 }
 
-class Dadoos extends StatelessWidget {
+class Dadoos extends StatefulWidget {
+  @override
+  State<Dadoos> createState() => _DadoosState();
+}
+
+class _DadoosState extends State<Dadoos> {
+  int numDadoEsquerdo = 1;
+
   @override
   Widget build(BuildContext context) {
-    var numDadoEsquerdo = 1;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -32,7 +38,11 @@ class Dadoos extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        numDadoEsquerdo = 3;
+                      });
+                    },
                     child: Image.asset("imagens/dado$numDadoEsquerdo.png"),
                   ),
                 ),
@@ -59,7 +69,11 @@ class Dadoos extends StatelessWidget {
         ),
         Text(
           "toque na imagem do dado para mudar a face dele",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w200,
+            fontSize: 13,
+          ),
         )
       ],
     );

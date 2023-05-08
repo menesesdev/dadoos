@@ -76,11 +76,11 @@ class _DadoosState extends State<Dadoos> {
           height: 10,
         ),
         Text(
-          "toque na imagem do dado para mudar a face dele",
+          "toque na imagem de qualquer dado para mudar as faces deles",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w200,
-            fontSize: 13,
+            fontSize: 12,
           ),
         )
       ],

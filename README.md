@@ -4,3 +4,4 @@ Um projeto que ao tocar na imagem de algum dos dados, faz com que eles mudem de 
 # Vídeo demonstrativo
 https://user-images.githubusercontent.com/109961465/236844164-d53221dc-9c2b-4807-8870-a2fdc4aaedfb.mp4
 
+_projeto não autoral, feito para o aprendizado de Dart & Flutter. Projeto feito com base nos vídeos do canal Polimorfismo. link: https://www.youtube.com/@CanalPolimorfismo_
